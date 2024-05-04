@@ -1,0 +1,5 @@
+
+
+This interactive scatter plot titled "Expectation of the Striker" visualizes the performance of football strikers by comparing their goals to expected goals (Goals/xG) against the total shots taken. Each point on the plot represents a striker, with the x-axis showing the ratio of actual goals scored to expected goals, and the y-axis representing the number of shots.
+
+Points are colored **steelblue** if the player's goals **exceed** their expected goals (Goals/xG > 1), indicating an overperformance relative to expectations. **Red points suggest underperformance**, where players scored fewer goals than expected. The plot includes a vertical reference line at x = 1, marked by a dashed steelblue line, representing the exact expectation where goals scored match expected goals. A label on this line reads **"Expectation = 1"**, serving as a benchmark for evaluating player efficiency.
