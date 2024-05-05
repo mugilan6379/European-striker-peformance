@@ -2,7 +2,7 @@ import streamlit as st
 import geopandas as gpd
 import folium
 import matplotlib.pyplot as plt
-from streamlit_folium import folium_static
+from streamlit_folium import folium_static,st_folium
 import pydeck as pdk
 
 global loc_file
@@ -50,7 +50,7 @@ def mapsViz(main_file,league):
     m = create_map(gdf,league)
     col1,col2,col3=st.columns([1, 2, 1]) 
     with col2:
-         folium_static(m)
+         st_folium(m,width=725,height=500)
     #st.write(gdf)
 
     
