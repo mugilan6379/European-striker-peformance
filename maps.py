@@ -50,7 +50,7 @@ def mapsViz(main_file,league):
     m = create_map(gdf,league)
     col1,col2,col3=st.columns([1, 2, 1]) 
     with col2:
-         folium_static(m,width=800,height=600)
+         folium_static(m,width=800,height=200)
     #st.write(gdf)
 
     
