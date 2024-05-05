@@ -20,8 +20,7 @@ def goalsvsyears(main_file, year_chosen,league_chosen):
         baseline='bottom',
         dx=5).encode(
         y='y',
-        text='label',
-        color='red'
+        text='label'
     )
     bar = alt.Chart(grouped_data).mark_bar().encode(
         x=alt.X('Club:N', sort='-y'),
