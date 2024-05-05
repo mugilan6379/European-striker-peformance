@@ -50,7 +50,7 @@ def mapsViz(main_file,league):
     m = create_map(gdf,league)
     col1,col2,col3=st.columns([1, 2, 1]) 
     with col2:
-         st_folium(m,width=725,height=500)
+         st_folium(m,width=800,height=800)
     #st.write(gdf)
 
     
