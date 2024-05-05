@@ -2,3 +2,4 @@ streamlit == 1.28.1
 geopandas == 0.14.2
 folium
 matplotlib
+streamlit_folium == 0.19.1
