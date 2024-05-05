@@ -48,9 +48,13 @@ def create_map(gdf,league_chosen):
 def mapsViz(main_file,league):
     gdf = load_data(main_file)
     m = create_map(gdf,league)
-    col1,col2,col3=st.columns([1, 2, 1]) 
+    col1,col2,col3=st.columns([1, 2, 2]) 
+    with col1:
+        st.write('')
     with col2:
          folium_static(m,width=500,height=400)
+    with col3:
+        st.write('')
     #st.write(gdf)
 
     
