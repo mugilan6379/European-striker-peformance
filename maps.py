@@ -48,7 +48,7 @@ def create_map(gdf,league_chosen):
 def mapsViz(main_file,league):
     gdf = load_data(main_file)
     m = create_map(gdf,league)
-    col1,col2,col3=st.columns([1, 2, 10]) 
+    col1,col2,col3=st.columns([1, 2, 15]) 
     with col1:
         st.write('')
     with col2:
