@@ -3,7 +3,7 @@ import pandas as pd
 import altair as alt
 
 def goalsvsyears(main_file, year_chosen,league_chosen): 
-    source_file = pd.read_csv('../StrikerAnalysis.csv')
+    source_file = pd.read_csv('Data/StrikerAnalysis.csv')
     #source_file = source_file[source_file['League'] != main_file['League'][0]]
     grouped_data = main_file.groupby(['Club', 'Year'])['Goals'].sum().reset_index()
     grouped_data['Year'] = grouped_data['Year'].astype(int)
