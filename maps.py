@@ -26,7 +26,7 @@ def create_map(gdf,league_chosen):
     center = country_data.geometry.centroid.iloc[0]  
     center_lat = center.y
     center_lon = center.x
-    m = folium.Map(location=[center_lat, center_lon], zoom_start=3,width=500,height=400)
+    m = folium.Map(location=[center_lat, center_lon], zoom_start=1,width=500,height=400)
     geojson_data = gdf.to_json()
     folium.GeoJson(
         geojson_data,
